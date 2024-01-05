@@ -1,11 +1,17 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
 }
 
 h1, h2 {
   text-align: center;
   margin: 0 auto;
+  color: white;
 }
 
 label {
@@ -17,8 +23,11 @@ footer {
   text-align: center;
 }
 
-fieldset {
-  margin: 25px;
+.form-container{
+  background-color: rgba(255, 217, 0, 0.3);
+  padding: 15px;
+  height: auto;
+  width: auto;
 }
 
 input[type="submit"] {

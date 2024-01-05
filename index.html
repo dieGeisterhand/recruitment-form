@@ -16,8 +16,8 @@
     </h2>
 
     <form id="survey-form">
-      <fieldset id="general-information">
-          <legend>Contact Information</legend>
+      
+      <div class="form-container">
 
           <label id="email-label" for="email">E-mail Address: 
             <input id="email" name="email" type="email" placeholder="Enter your e-mail" required/>
@@ -25,10 +25,9 @@
           <label id="name-label" for="name">Character Name: 
             <input id="name" name="name" type="text" placeholder="Enter character name" required/>
           </label>
-      </fieldset>
 
-      <fieldset id="ingame-activities">
-        <legend>Your Character</legend>
+
+      
 
         <label id="number-label" for="number">Character Skillpoints: 
           <input id="number" name="number" type="number" placeholder="Enter amount of skillpoints" min="0" max="2500000" required/>
@@ -45,10 +44,9 @@
             <option>5</option>
           </select> 
         </label>
-      </fieldset>
+ 
 
-      <fieldset id="playing-style">
-        <legend>Choose your Corporation</legend>
+
         <p>
           We currently have two corporations. Please select what would interest you the most:
         </p>
@@ -63,13 +61,11 @@
         <label><input type="checkbox" value="exploration"/> Exploration</label>
         <label><input type="checkbox" value="industry"/> Industry</label>
         <label><input type="checkbox" value="pi"/> PI</label>
-      </fieldset>
 
-      <fieldset>
-        <legend>Tell Us About You</legend>
         <textarea id="bio"></textarea>
-      </fieldset>
 
+      
+      </div>
       <input id="submit" type="submit" value="Submit Application" />
 
     </form>
