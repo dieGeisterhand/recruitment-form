@@ -6,6 +6,67 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <main>
+    <h1 id="title">
+      Join Us
+    </h1>
+
+
+    <p id="description">
+      We are a group of pilots that like to have fun in New Eden. Please fill out the form below if you're interested in flying with us.
+    </p>
+
+    <form id="survey-form">
+      <fieldset id="general-information">
+        <label id="email-label" for="email">E-mail Address: 
+          <input id="email" name="email" type="email" placeholder="example@example.com"/>
+        </label>
+        <label id="name-label" for="name">Character Name: 
+          <input id="name" name="name" type="text" placeholder="First and Last name, if any"/>
+        </label>
+        <label id="number-label" for="number">
+          <input id="number" name="number" type="number" placeholder="Character Skillpoints" min="0" max="2500000"/>
+        </label>
+      </fieldset>
+
+      <fieldset id="ingame-activities">
+        <label>
+          What do you mainly do in-game?
+          <select>
+            
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select> 
+        </label>
+      </fieldset>
+
+      <fieldset id="playing-style">
+        <p>
+          We currently have two corporations. Please select what would interest you the most:
+        </p>
+        <label><input type="radio" name="corp-type"/> Numvisia (War Elegible)</label>
+        <label><input type="radio" name="corp-type"/> Reem's Hooligans (Factional Warfare)</label>
+
+        <p>Your areas of interest:</p>
+        <label><input type="checkbox"/> Mining</label>
+        <label><input type="checkbox"/> PvE</label>
+        <label><input type="checkbox"/> PvP</label>
+        <label><input type="checkbox"/> Exploration</label>
+        <label><input type="checkbox"/> Industry</label>
+        <label><input type="checkbox"/> PI</label>
+      </fieldset>
+    </form>
+
+    
+
+
+
+    
+
+  </main>
 
 
 
@@ -19,7 +80,6 @@
 
 
 
-  
 <footer>
 </footer>
 </body>
