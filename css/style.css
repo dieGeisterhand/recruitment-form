@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-  color:rgb(255, 217, 0);
+  color:rgb(255, 178, 61);
   text-align: center;
   margin: 0 auto;
 }
@@ -42,8 +42,19 @@ textarea {
   color: rgb(63, 63, 63);
 }
 
+a {
+  text-decoration: none;
+  color:rgb(255, 178, 61);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .form-container{
-  background-color: rgba(255, 217, 0, 0.1);
+  background-color: rgba(255, 178, 61, 0.1);
   padding: 15px;
   border-radius: 25px;
   height: auto;
@@ -99,6 +110,15 @@ input[type="number"] {
 }
 /*------------------------------*/
 
+input[type="radio"] {
+  accent-color: rgb(255, 178, 61);
+}
+
+input[type="checkbox"] {
+  accent-color: rgb(255, 178, 61);
+
+}
+
 select{
   display: block;
   width: 50%;
@@ -152,5 +172,5 @@ textarea {
 }
 
 .submit:active{
-  background-color:rgb(255, 217, 0);
+  background-color:rgb(255, 178, 61);
 }
