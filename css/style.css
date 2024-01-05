@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin: 15px;
+}
+
+input{}
+
+footer {
+  text-align: center;
+}
+
+fieldset {
+  margin: 25px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+#title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#description{
+  width: 500px;
+  margin-bottom: 25px;
+}
+
+#survey-form {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.submit {
+  width: 100%;
+}

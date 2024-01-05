@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Numvisia Recruitment Form</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main>
@@ -11,28 +11,32 @@
       Join Us
     </h1>
 
-
-    <p id="description">
+    <h2 id="description">
       We are a group of pilots that like to have fun in New Eden. Please fill out the form below if you're interested in flying with us.
-    </p>
+    </h2>
 
     <form id="survey-form">
       <fieldset id="general-information">
-        <label id="email-label" for="email">E-mail Address: 
-          <input id="email" name="email" type="email" placeholder="example@example.com"/>
-        </label>
-        <label id="name-label" for="name">Character Name: 
-          <input id="name" name="name" type="text" placeholder="First and Last name, if any"/>
-        </label>
-        <label id="number-label" for="number">
-          <input id="number" name="number" type="number" placeholder="Character Skillpoints" min="0" max="2500000"/>
-        </label>
+          <legend>Contact Information</legend>
+
+          <label id="email-label" for="email">E-mail Address: 
+            <input id="email" name="email" type="email" placeholder="Enter your e-mail" required/>
+          </label>
+          <label id="name-label" for="name">Character Name: 
+            <input id="name" name="name" type="text" placeholder="Enter character name" required/>
+          </label>
       </fieldset>
 
       <fieldset id="ingame-activities">
+        <legend>Your Character</legend>
+
+        <label id="number-label" for="number">Character Skillpoints: 
+          <input id="number" name="number" type="number" placeholder="Enter amount of skillpoints" min="0" max="2500000" required/>
+        </label>
+
         <label>
-          What do you mainly do in-game?
-          <select>
+          What is your main in-game focus?
+          <select id="dropdown">
             
             <option>1</option>
             <option>2</option>
@@ -44,48 +48,39 @@
       </fieldset>
 
       <fieldset id="playing-style">
+        <legend>Choose your Corporation</legend>
         <p>
           We currently have two corporations. Please select what would interest you the most:
         </p>
-        <label><input type="radio" name="corp-type"/> Numvisia (War Elegible)</label>
-        <label><input type="radio" name="corp-type"/> Reem's Hooligans (Factional Warfare)</label>
+        <label><input type="radio" name="corp-type" value="numvisia"/> Numvisia (War Elegible)</label>
+        <label><input type="radio" name="corp-type" value="hooligans"/> Reem's Hooligans (Factional Warfare)</label>
 
         <p>Your areas of interest:</p>
-        <label><input type="checkbox"/> Mining</label>
-        <label><input type="checkbox"/> PvE</label>
-        <label><input type="checkbox"/> PvP</label>
-        <label><input type="checkbox"/> Exploration</label>
-        <label><input type="checkbox"/> Industry</label>
-        <label><input type="checkbox"/> PI</label>
+
+        <label><input type="checkbox" value="mining"/> Mining</label>
+        <label><input type="checkbox" value="pve"/> PvE</label>
+        <label><input type="checkbox" value="pvp"/> PvP</label>
+        <label><input type="checkbox" value="exploration"/> Exploration</label>
+        <label><input type="checkbox" value="industry"/> Industry</label>
+        <label><input type="checkbox" value="pi"/> PI</label>
       </fieldset>
+
+      <fieldset>
+        <legend>Tell Us About You</legend>
+        <textarea></textarea>
+      </fieldset>
+
+      <input id="submit" class="submit" type="submit" value="Submit Application" rows="10" cols="10" />
+
     </form>
-
-    
-
-
-
-    
 
   </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
 <footer>
+  <p>
+    - Geisterhand -
+  </p>
 </footer>
+
 </body>
-
-
-
-
-
 </html>
