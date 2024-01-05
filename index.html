@@ -8,11 +8,12 @@
 <body>
   <main>
     <h1 id="title">
-      Join Us
+      Join Numvisia Today!
     </h1>
 
     <h2 id="description">
-      We are a group of pilots that like to have fun in New Eden. Please fill out the form below if you're interested in flying with us.
+      We are a group of pilots that enjoy flying around in New Eden.
+      Please fill out the form below if you're interested in hanging out with us.
     </h2>
 
     <form id="survey-form">
@@ -34,26 +35,26 @@
         </label>
 
         <label>
-          What is your main in-game focus?
-          <select id="dropdown">
+          What is your main in-game focus at the moment?
+          <select id="dropdown" required>
             
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="" selected disabled hidden>Select your option</option>
+            <option value="1">Hoarding researched blueprints</option>
+            <option value="2">Trying to pay for sub with isk</option>
+            <option value="3">Learning how to PvP</option>
+            <option value="4">AFK mining</option>
           </select> 
         </label>
  
 
 
         <p>
-          We currently have two corporations. Please select what would interest you the most:
+          We currently have two corporations. Select the one you would like to apply for:
         </p>
         <label><input type="radio" name="corp-type" value="numvisia"/> Numvisia (War Elegible)</label>
         <label><input type="radio" name="corp-type" value="hooligans"/> Reem's Hooligans (Factional Warfare)</label>
 
-        <p>Your areas of interest:</p>
+        <p>Your area(s) of interest:</p>
 
         <label><input type="checkbox" value="mining"/> Mining</label>
         <label><input type="checkbox" value="pve"/> PvE</label>
@@ -62,20 +63,26 @@
         <label><input type="checkbox" value="industry"/> Industry</label>
         <label><input type="checkbox" value="pi"/> PI</label>
 
-        <textarea id="bio"></textarea>
+        <textarea id="bio" placeholder="Tell us a little about you!"></textarea>
 
       
       </div>
-      <input id="submit" type="submit" value="Submit Application" />
+
+      <button class="submit">
+        Submit Application
+      </button>
+
 
     </form>
 
   </main>
 
 <footer>
+<!--
   <p>
     - Geisterhand -
   </p>
+-->
 </footer>
 
 </body>

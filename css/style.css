@@ -1,70 +1,115 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  color: white;
   background-image: url("bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  padding: 75px;
 
 }
 
-h1, h2 {
+h1 {
+  color:rgb(255, 217, 0);
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
   text-align: center;
   margin: 0 auto;
   color: white;
+  width: 800px;
+  margin-bottom: 25px;
+  font-weight: 200;
 }
 
-label {
+label, p {
   display: block;
   margin: 15px;
+  font-size: 20px;
 }
+
 
 footer {
   text-align: center;
 }
 
+
+input, select,
+textarea {
+  color: rgb(63, 63, 63);
+}
+
 .form-container{
-  background-color: rgba(255, 217, 0, 0.3);
+  background-color: rgba(255, 217, 0, 0.2);
   padding: 15px;
+  border-radius: 25px;
   height: auto;
   width: auto;
 }
 
-input[type="submit"] {
-  display: block;
-  margin: 0 auto;
-}
 
 input[type="email"] {
   display: block;
   width: 100%;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 25px;
+  padding-left: 15px;
+  margin-top: 10px;
 }
 
 input[type="text"] {
   display: block;
   width: 100%;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 25px;
+  padding-left: 15px;
+  margin-top: 10px;
 }
 
 input[type="number"]{
   display: block;
-  width: 100%;
+  width: 98%;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
 }
 
+/*hide buttons on number input*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/*------------------------------*/
 
 select{
   display: block;
   width: 50%;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 25px;
+  padding-left: 15px;
+  margin-top: 10px;
 }
+
 
 #title {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-#description{
-  width: 500px;
-  margin-bottom: 25px;
-}
+
 
 #survey-form {
   margin: 0 auto;
@@ -72,12 +117,32 @@ select{
 }
 
 textarea {
-  width: 99%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 93%;
   height: 150px;
   min-height: 150px;
-  resize:vertical;
+  resize: none;
+  font-size: 18px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+  padding: 25px;
 }
 
+
 .submit {
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  margin-top: 25px;
+  background-color: white;
+  color: rgb(31, 31, 31);
+  border: none;
+}
+
+.submit:active{
+  background-color:rgb(255, 217, 0);
 }
