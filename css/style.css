@@ -13,8 +13,6 @@ label {
   margin: 15px;
 }
 
-input{}
-
 footer {
   text-align: center;
 }
@@ -26,6 +24,27 @@ fieldset {
 input[type="submit"] {
   display: block;
   margin: 0 auto;
+}
+
+input[type="email"] {
+  display: block;
+  width: 100%;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+}
+
+input[type="number"]{
+  display: block;
+  width: 100%;
+}
+
+
+select{
+  display: block;
+  width: 50%;
 }
 
 #title {
@@ -41,6 +60,13 @@ input[type="submit"] {
 #survey-form {
   margin: 0 auto;
   max-width: 800px;
+}
+
+textarea {
+  width: 99%;
+  height: 150px;
+  min-height: 150px;
+  resize:vertical;
 }
 
 .submit {
