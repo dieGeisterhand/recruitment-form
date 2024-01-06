@@ -58,7 +58,7 @@ img {
 
 
 .form-container{
-  background-color: rgba(255, 178, 61, 0.4);
+  background-color: rgba(56, 56, 56, 0.4);
   padding: 15px;
   border-radius: 25px;
   height: auto;
@@ -184,6 +184,7 @@ textarea {
   background-color: white;
   color: rgb(31, 31, 31);
   border: none;
+
 }
 
 .submit:active{
