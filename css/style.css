@@ -177,7 +177,11 @@ textarea {
   border: none;
 }
 
-.submit:active{
+.submit:hover{
   background-color:rgb(255, 178, 61);
+}
+
+.submit:active{
+  background-color: white;
 }
 
