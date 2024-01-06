@@ -9,42 +9,29 @@
 <body>
   <main>
     <img src="logo.webp">
-
     <h1 id="title">
       Join <a href="https://molesin.wordpress.com/">Numvisia</a> Today!
     </h1>
-
-
-
     <h2 id="description">
       We are a group of pilots that enjoy hanging out and do different activities throughout New Eden.
     </h2>
-
     <h2 id="description">
       Please fill out the form below if you're interested in flying with us.
     </h2>
     <form id="survey-form">
-      
       <div class="form-container">
-
-          <label id="email-label" for="email">E-mail Address: 
-            <input id="email" name="email" type="email" placeholder="Enter your e-mail" required/>
-          </label>
-          <label id="name-label" for="name">Character Name: 
-            <input id="name" name="name" type="text" placeholder="Enter character name"  required/>
-          </label>
-
-
-      
-
+        <label id="email-label" for="email">E-mail Address: 
+          <input id="email" name="email" type="email" placeholder="Enter your e-mail" required/>
+        </label>
+        <label id="name-label" for="name">Character Name: 
+          <input id="name" name="name" type="text" placeholder="Enter character name"  required/>
+        </label>
         <label id="number-label" for="number">Character Skillpoints: 
           <input id="number" name="number" type="number" placeholder="Enter amount of skillpoints" min="0" max="2500000" required/>
         </label>
-
         <label>
           What is your main in-game focus at the moment?
           <select id="dropdown" required>
-            
             <option value="" selected disabled hidden>Select your option</option>
             <option value="1">Hoarding researched blueprints</option>
             <option value="2">Trying to pay for sub with isk</option>
@@ -52,39 +39,26 @@
             <option value="4">AFK mining</option>
           </select> 
         </label>
- 
-
-
         <p>
           We currently have two corporations. Select the one you would like to apply for:
         </p>
         <label><input type="radio" name="corp-type" value="numvisia"/> Numvisia (War Free)</label>
         <label><input type="radio" name="corp-type" value="hooligans"/> Reem's Hooligans (Factional Warfare)</label>
-
         <p>Your area(s) of interest:</p>
-
         <label><input type="checkbox" value="mining"/> Mining</label>
         <label><input type="checkbox" value="pve"/> PvE</label>
         <label><input type="checkbox" value="pvp"/> PvP</label>
         <label><input type="checkbox" value="exploration"/> Exploration</label>
         <label><input type="checkbox" value="industry"/> Industry</label>
         <label><input type="checkbox" value="pi"/> PI</label>
-
         <p>Have something you would like for us to know about you?</p>
-        <textarea id="bio" maxlength="1500" placeholder="Tell us a little about it!"></textarea>
-
-      
+        <textarea id="bio" maxlength="1500" placeholder="Tell us a little about it!"></textarea>  
       </div>
-
       <button class="submit">
         Submit Application
       </button>
-
-
     </form>
-
   </main>
-
 <footer>
 <!--
   <p>
@@ -92,7 +66,5 @@
   </p>
 -->
 </footer>
-
 </body>
-  
 </html>
