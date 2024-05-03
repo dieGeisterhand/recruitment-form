@@ -18,7 +18,8 @@
     <h2 id="description">
       Please fill out the form below if you're interested in flying with us.
     </h2>
-    <form id="survey-form">
+    <form id="survey-form" method="POST">
+      <input type="hidden" name="access_key" value="42a45cb1-dd05-4171-8f9c-4a0dce82019e" />
       <div class="form-container">
         <label id="email-label" for="email">E-mail Address: 
           <input id="email" name="email" type="email" placeholder="Enter your e-mail" required/>
@@ -54,6 +55,7 @@
         <p>Have something you would like for us to know about you?</p>
         <textarea id="bio" maxlength="1500" placeholder="Tell us a little about it!"></textarea>  
       </div>
+      <div id="result"></div>
       <button class="submit">
         Submit Application
       </button>
@@ -66,5 +68,46 @@
   </p>
 -->
 </footer>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+  const form = document.getElementById('form');
+  const result = document.getElementById('result');
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+    result.innerHTML = "Please wait..."
+  
+      fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+              },
+              body: json
+          })
+          .then(async (response) => {
+              let json = await response.json();
+              if (response.status == 200) {
+                  result.innerHTML = "Form submitted successfully";
+              } else {
+                  console.log(response);
+                  result.innerHTML = json.message;
+              }
+          })
+          .catch(error => {
+              console.log(error);
+              result.innerHTML = "Something went wrong!";
+          })
+          .then(function() {
+              form.reset();
+              setTimeout(() => {
+                  result.style.display = "none";
+              }, 3000);
+          });
+  });
+  </script>  
 </body>
 </html>
