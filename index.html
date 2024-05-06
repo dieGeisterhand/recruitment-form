@@ -18,18 +18,24 @@
     <h2 id="description">
       Please fill out the form below if you're interested in flying with us.
     </h2>
+
     <form id="form" method="POST" acttion="https://api.web3forms.com/submit" class="needs-validation" novalidate>
       <input type="hidden" name="access_key" value="42a45cb1-dd05-4171-8f9c-4a0dce82019e" />
+
       <div class="form-container">
+
         <label id="email-label" for="email">E-mail Address: 
           <input id="email" name="email" type="email" placeholder="Enter your e-mail" required/>
         </label>
+
         <label id="name-label" for="name">Character Name: 
           <input id="name" name="name" type="text" placeholder="Enter character name"  required/>
         </label>
+
         <label id="number-label" for="number">Character Skillpoints: 
           <input id="number" name="number" type="number" placeholder="Enter approximated skillpoint amount" min="0" max="2500000" required/>
         </label>
+
         <label>
           What is your main in-game focus at the moment?
           <select id="dropdown" required>
@@ -40,24 +46,30 @@
             <option value="4">AFK mining</option>
           </select> 
         </label>
+
         <p>
           We currently have two corporations. Select the one you would like to apply for:
         </p>
         <label><input type="radio" name="corp-type" value="numvisia"/> Numvisia (War Free)</label>
         <label><input type="radio" name="corp-type" value="hooligans"/> Reem's Hooligans (Factional Warfare)</label>
         <p>Your area(s) of interest:</p>
-        <label><input type="checkbox" value="mining"/> Mining</label>
-        <label><input type="checkbox" value="pve"/> PvE</label>
-        <label><input type="checkbox" value="pvp"/> PvP</label>
-        <label><input type="checkbox" value="exploration"/> Exploration</label>
-        <label><input type="checkbox" value="industry"/> Industry</label>
-        <label><input type="checkbox" value="pi"/> PI</label>
+        <label><input name="mining" type="checkbox" value="mining"/> Mining</label>
+        <label><input name="pve" type="checkbox" value="pve"/> PvE</label>
+        <label><input name="pvp" type="checkbox" value="pvp"/> PvP</label>
+        <label><input name="exploration" type="checkbox" value="exploration"/> Exploration</label>
+        <label><input name="industry" type="checkbox" value="industry"/> Industry</label>
+        <label><input name="pi" type="checkbox" value="pi"/> PI</label>
+
         <p>Do you have something you would like for us to know about yourself or your playing style?</p>
         <div class="text-area-container">
-          <textarea id="bio" maxlength="1500" placeholder="Tell us a little about it!"></textarea>  
+          <textarea id="bio" name="message" maxlength="1500" placeholder="Tell us a little about it!"></textarea>  
         </div>
+
       </div>
-      <div id="result"></div>
+      <div class="result-div">
+        <div id="result"></div>
+      </div>
+
       <button class="submit">
         Submit Application
       </button>
